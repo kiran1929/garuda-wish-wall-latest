@@ -14,16 +14,34 @@
         <!-- LEFT SIDEBAR -->
         <nav class="sidebar">
             <div class="logo-box"><i class="bi bi-balloon-heart-fill"></i></div>
-            <div class="nav-links">
-                <a href="index.html" class="nav-item" title="Home"><i class="bi bi-house-door"></i></a>
-                <a href="explore.html" class="nav-item" title="Explore"><i class="bi bi-compass"></i></a>
-                <a href="#" class="nav-item" title="Bookmarks"><i class="bi bi-bookmark"></i></a>
-                <a href="notifications.html" class="nav-item" title="Notifications"><i class="bi bi-bell"></i></a>
-                <a href="profile.html" class="nav-item active" title="Profile"><i class="bi bi-person"></i></a>
-                <a href="newwish.html" class="nav-item" title="New Wish"><i class="bi bi-pencil-square"></i></a>
+                        <div class="nav-links">
+                <a href="index.html" class="nav-item" title="Home">
+                    <i class="bi bi-house-door"></i>
+                </a>
+                <a href="explore.html" class="nav-item" title="Explore">
+                    <i class="bi bi-compass"></i>
+                </a>
+                <a href="#" class="nav-item" title="Bookmarks">
+                    <i class="bi bi-bookmark"></i>
+                </a>
+                <a href="notifications.html" class="nav-item" title="Notifications">
+                    <i class="bi bi-bell"></i>
+                </a>
+                <a href="profile.html" class="nav-item active" title="Profile">
+                    <i class="bi bi-person"></i>
+                </a>
+                <a href="newwish.html" class="nav-item" title="New Wish">
+                    <i class="bi bi-pencil-square"></i>
+                </a>
+                <a href="edit-profile.html" class="nav-item" title="Settings">
+                    <i class="bi bi-gear"></i>
+                </a>
+                <a href="#" class="nav-item" id="logout-btn" title="Logout">
+                    <i class="bi bi-box-arrow-right"></i>
+                </a>
             </div>
             <div class="profile-icon">
-                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Aisha" alt="User">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=User" alt="User">
             </div>
         </nav>
 
@@ -47,9 +65,9 @@
                         <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Dev" class="avatar-option" alt="Developer">
                         <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Artist" class="avatar-option" alt="Artist">
                         <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Anon" class="avatar-option" alt="Anonymous">
-                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Aisha" class="avatar-option active" alt="Aisha">
-                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Samir" class="avatar-option" alt="Samir">
-                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Rahul" class="avatar-option" alt="Rahul">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=A1" class="avatar-option" alt="A1">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=A2" class="avatar-option" alt="A2">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=A3" class="avatar-option" alt="A3">
                     </div>
                 </div>
 
@@ -59,27 +77,17 @@
                     
                     <div class="form-row">
                         <label>Full Name</label>
-                        <input type="text" id="edit-name" class="input-light" value="Aisha Sharma">
+                        <input type="text" id="edit-name" class="input-light" value="">
                     </div>
 
                     <div class="form-row">
                         <label>Username</label>
-                        <input type="text" id="edit-username" class="input-light" value="@aisha_dreams">
+                        <input type="text" id="edit-username" class="input-light" value="" readonly>
                     </div>
 
                     <div class="form-row">
                         <label>Bio</label>
-                        <textarea id="edit-bio" class="input-light" rows="3">Chasing dreams, building startups, and loving life. Sharing my journey one wish at a time! ✨🚀</textarea>
-                    </div>
-
-                    <div class="form-row">
-                        <label>Location</label>
-                        <input type="text" id="edit-location" class="input-light" value="Bangalore, India">
-                    </div>
-
-                    <div class="form-row">
-                        <label>Interests / Tags</label>
-                        <input type="text" id="edit-tags" class="input-light" value="Startups, Design, Travel">
+                        <textarea id="edit-bio" class="input-light" rows="3" placeholder="Tell us about yourself..."></textarea>
                     </div>
                 </div>
 
@@ -96,16 +104,18 @@
                 <span class="widget-header">Live Preview</span>
                 <div class="preview-card">
                     <div class="preview-cover"></div>
-                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Aisha" id="preview-avatar" class="preview-avatar-img" alt="Preview">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=User" id="preview-avatar" class="preview-avatar-img" alt="Preview">
                     <div class="preview-details">
-                        <h3 id="preview-name">Aisha Sharma</h3>
-                        <span id="preview-username">@aisha_dreams</span>
-                        <p id="preview-bio">Chasing dreams, building startups, and loving life. Sharing my journey one wish at a time! ✨🚀</p>
+                        <h3 id="preview-name">Loading...</h3>
+                        <span id="preview-username">@username</span>
+                        <p id="preview-bio">Bio will appear here...</p>
                     </div>
                 </div>
             </div>
         </aside>
     </div>
+    <script src="config.js"></script>
+    <script src="auth.js"></script>
     <script src="edit-profile.js"></script>
 </body>
 </html>

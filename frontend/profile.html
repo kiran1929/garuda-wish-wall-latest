@@ -14,16 +14,34 @@
         <!-- LEFT SIDEBAR -->
         <nav class="sidebar">
             <div class="logo-box"><i class="bi bi-balloon-heart-fill"></i></div>
-            <div class="nav-links">
-                <a href="index.html" class="nav-item" title="Home"><i class="bi bi-house-door"></i></a>
-                <a href="explore.html" class="nav-item" title="Explore"><i class="bi bi-compass"></i></a>
-                <a href="#" class="nav-item" title="Bookmarks"><i class="bi bi-bookmark"></i></a>
-                <a href="notifications.html" class="nav-item" title="Notifications"><i class="bi bi-bell"></i></a>
-                <a href="profile.html" class="nav-item active" title="Profile"><i class="bi bi-person"></i></a>
-                <a href="newwish.html" class="nav-item" title="New Wish"><i class="bi bi-pencil-square"></i></a>
+                        <div class="nav-links">
+                <a href="index.html" class="nav-item" title="Home">
+                    <i class="bi bi-house-door"></i>
+                </a>
+                <a href="explore.html" class="nav-item" title="Explore">
+                    <i class="bi bi-compass"></i>
+                </a>
+                <a href="#" class="nav-item" title="Bookmarks">
+                    <i class="bi bi-bookmark"></i>
+                </a>
+                <a href="notifications.html" class="nav-item" title="Notifications">
+                    <i class="bi bi-bell"></i>
+                </a>
+                <a href="profile.html" class="nav-item active" title="Profile">
+                    <i class="bi bi-person"></i>
+                </a>
+                <a href="newwish.html" class="nav-item" title="New Wish">
+                    <i class="bi bi-pencil-square"></i>
+                </a>
+                <a href="edit-profile.html" class="nav-item" title="Settings">
+                    <i class="bi bi-gear"></i>
+                </a>
+                <a href="#" class="nav-item" id="logout-btn" title="Logout">
+                    <i class="bi bi-box-arrow-right"></i>
+                </a>
             </div>
             <div class="profile-icon">
-                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Aisha" alt="User">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=User" alt="User">
             </div>
         </nav>
 
@@ -33,17 +51,17 @@
                 <div class="cover-banner"></div>
                 <div class="profile-info-wrap">
                     <div class="profile-top-row">
-                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Aisha" class="profile-avatar-large" alt="User">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=User" class="profile-avatar-large" alt="User">
                         <a href="edit-profile.html" class="btn-edit-profile" style="text-decoration:none; display:inline-flex; align-items:center;">Edit Profile</a>
                     </div>
                     <div class="profile-details">
-                        <h2 class="profile-name">Aisha Sharma</h2>
-                        <span class="profile-username">@aisha_dreams</span>
-                        <p class="profile-bio">Chasing dreams, building startups, and loving life. Sharing my journey one wish at a time! ✨🚀</p>
+                        <h2 class="profile-name">Loading...</h2>
+                        <span class="profile-username">@username</span>
+                        <p class="profile-bio">Bio loading...</p>
                         <div class="profile-stats">
-                            <div class="stat-box"><span class="stat-num">142</span> Wishes</div>
-                            <div class="stat-box"><span class="stat-num">8.4K</span> Followers</div>
-                            <div class="stat-box"><span class="stat-num">240</span> Following</div>
+                            <div class="stat-box"><span class="stat-num">0</span> Wishes</div>
+                            <div class="stat-box"><span class="stat-num">0</span> Followers</div>
+                            <div class="stat-box"><span class="stat-num">0</span> Following</div>
                         </div>
                     </div>
                 </div>
@@ -56,29 +74,7 @@
             </div>
 
             <div id="wishes-tab" class="tab-content active-tab">
-                <div class="post box">
-                    <div class="post-top">
-                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Aisha" class="avatar-sm" alt="User">
-                        <div class="post-meta">
-                            <span class="author">Aisha Sharma</span>
-                            <span class="time">1 day ago</span>
-                        </div>
-                        <span class="mood-badge badge-orange">🚀 Startup</span>
-                    </div>
-                    <div class="post-body">
-                        My biggest wish this year is to launch my own design agency. Taking small steps every day to make it real!
-                    </div>
-                    <div class="post-bottom">
-                        <div class="reactions">
-                            <button class="react-btn active">👍 <span>120</span></button>
-                            <button class="react-btn">❤️ <span>45</span></button>
-                        </div>
-                        <div class="actions">
-                            <button class="action-btn"><i class="bi bi-chat"></i> Reply</button>
-                            <button class="action-btn"><i class="bi bi-share"></i> Share</button>
-                        </div>
-                    </div>
-                </div>
+                <div id="profilePosts"></div>
             </div>
 
             <div id="saved-tab" class="tab-content">
@@ -94,27 +90,12 @@
         <aside class="right-sidebar">
             <div class="widget box">
                 <span class="widget-header">Similar Profiles</span>
-                <div class="user-list">
-                    <div class="user-row">
-                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Priya" class="avatar-sm" alt="Priya">
-                        <div class="user-info">
-                            <span class="u-name">Priya K.</span>
-                            <span class="u-handle">@priya_arts</span>
-                        </div>
-                        <button class="btn-follow">Follow</button>
-                    </div>
-                    <div class="user-row">
-                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Dev" class="avatar-sm" alt="Dev">
-                        <div class="user-info">
-                            <span class="u-name">Dev Patel</span>
-                            <span class="u-handle">@dev_codes</span>
-                        </div>
-                        <button class="btn-follow">Follow</button>
-                    </div>
-                </div>
+                <div class="user-list"></div>
             </div>
         </aside>
     </div>
+    <script src="config.js"></script>
+    <script src="auth.js"></script>
     <script src="profile.js"></script>
 </body>
 </html>

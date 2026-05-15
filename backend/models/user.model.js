@@ -17,6 +17,37 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+
+    bio: {
+      type: String,
+      default: ""
+    },
+
+    avatar: {
+      type: String,
+      default: ""
+    },
+
+    followers: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+      },
+    ],
+
+    following: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+      },
+    ],
+
+    bookmarks: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Post",
+      },
+    ],
   },
   {
     timestamps: true,
