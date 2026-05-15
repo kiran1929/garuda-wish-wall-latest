@@ -1,4 +1,4 @@
-const API_URL = "https://garuda-wish-wall-latest.onrender.com/posts";
+const API_URL = window.API_URL || "https://garuda-wish-wall-latest.onrender.com";
 const token = localStorage.getItem("token");
 
 document.addEventListener("DOMContentLoaded", function () {
