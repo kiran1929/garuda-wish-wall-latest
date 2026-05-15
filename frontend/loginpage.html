@@ -330,7 +330,7 @@
 
         try {
           // First, attempt to Login
-          let response = await fetch("http://localhost:3000/auth/login", {
+          let response = await fetch("https://garuda-wish-wall-latest.onrender.com/auth/login", {
             method: "POST",
             headers: {
               "Content-Type": "application/json"
@@ -349,7 +349,7 @@
             // If user doesn't exist, automatically Sign Them Up for easy testing!
             let name = email.split('@')[0]; // Make a fake name from email
             
-            let signupResponse = await fetch("http://localhost:3000/auth/signup", {
+            let signupResponse = await fetch("https://garuda-wish-wall-latest.onrender.com/auth/signup", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json"

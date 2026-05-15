@@ -1,5 +1,5 @@
 // script.js
-const API_URL = "http://localhost:3000/posts";
+const API_URL = "https://garuda-wish-wall-latest.onrender.com/posts";
 
 document.addEventListener("DOMContentLoaded", function () {
     let textarea = document.getElementById("wish-textarea");
