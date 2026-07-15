@@ -3,7 +3,7 @@
 A modern, Instagram-style social media platform where users can share their wishes, follow others, and build a community of dreamers. Built with a focus on simplicity, performance, and a premium "Startup" aesthetic.
 
 ## 🚀 Live Demo
-- **Frontend:** [https://wish-wall-project.vercel.app](https://wish-wall-project.vercel.app) (Replace with your actual link)
+- **Frontend:** [https://wish-wall-project.vercel.app](https://wish-wall-project.vercel.app)
 - **Backend:** [https://garuda-wishwall-backend.onrender.com](https://garuda-wishwall-backend.onrender.com)
 
 ## ✨ Features
