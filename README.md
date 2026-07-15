@@ -47,4 +47,4 @@ Wish_wall_project/
    - Open `frontend/index.html` using Live Server.
 
 ## 📄 License
-MIT License - Created with ❤️ by Nikhil Jeeva.
+MIT License - Created with ❤️ by Kirandeep.
